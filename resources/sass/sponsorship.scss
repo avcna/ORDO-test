@@ -1,0 +1,125 @@
+@import "variables";
+
+.sponsor-section {
+  padding: 4.375rem 4.875rem;
+  overflow-x: auto;
+  h4{
+    text-align: center;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e0f6ff;
+  margin-bottom: 100px;
+}
+
+th,
+td {
+  padding: 0.875rem 1rem;
+  text-align: center;
+}
+
+th:first-child,
+td:first-child {
+  border-top-left-radius: 12px;
+}
+
+th:last-child,
+td:last-child {
+  border-top-right-radius: 12px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+th {
+  background-color: #e0f6ff;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+td {
+  background-color: #fff;
+  color: black;
+  font-size: 0.9375rem;
+}
+
+tbody tr:nth-child(even) {
+  td {
+    background-color: #f8fdff;
+  }
+}
+
+.mission-support-btn {
+  padding: $padding-btn;
+  font-family: Outfit;
+  border-radius: $border-rad-btn;
+  background:  #518BBB;
+  color: #fff;
+  border: none;
+  display: flex;
+}
+
+.donation-btn {
+  background:  #fff;
+  color: #518BBB;
+}
+
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  th:last-child,
+  td:last-child {
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+.title-sponsor{
+  font-family: Outfit;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  margin: 0;
+  color: #112D63;
+}
+
+.desc-sponsor{
+  max-width: 700px;
+}
+
+.bg-blue {
+  background-color: #518BBB !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  color: #fff;
+
+  button{
+    margin: 0 auto;
+  }
+}
+
+.righ{
+  border-right: 2px solid #fff;
+}
+

@@ -1,0 +1,59 @@
+@import "variables";
+
+.about-section {
+  padding: 70px 78px;
+}
+.text-wrapper {
+  padding: 0 192px;
+  p,
+  h3 {
+    text-align: center;
+  }
+}
+img {
+  margin: 0 auto;
+}
+
+.centered {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.comparison-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 44px;
+  position: relative;
+}
+.comparison {
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
+  P{
+    text-align: center;
+  }
+}
+
+.transfor-pict {
+  height: 120px;
+  width: 200px;
+  background-color: white;
+  background-image: url("../../public/assets/about/curved-arrow.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center -10px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  center {
+    margin-top: 70px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+    letter-spacing: -0.005em;
+    color: $main-color;
+  }
+}
