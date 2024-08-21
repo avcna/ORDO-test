@@ -1,9 +1,15 @@
 ## Cara menjalankan aplikasi
 - clone repo ini dengan command `git clone`
 - buka folder dengan command `cd`
-- jalankan `npm i` pada terminal
-- jalankan `php artisan serve` pada terminal
-- tambah terminal baru dan jalankan `npm run dev`
+- jalankan command berikut pada terminal (linux):
+- `npm i`
+- `composer install` 
+- `mv .env.example .env` 
+- `php artisan cache:clear` 
+- `composer dump-autoload `
+- `php artisan key:generate`
+- `sudo php artisan serve`
+- [terminal baru] `npm run dev`
 - copy dan paste alamat berikut ke web browser anda `http://localhost:8000/`
 
   ## Fitur Utama
