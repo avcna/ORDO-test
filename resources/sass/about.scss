@@ -26,12 +26,16 @@ img {
   column-gap: 44px;
   position: relative;
 }
-.comparison {
+.comparisons {
   object-fit: cover;
   overflow: hidden;
-  border-radius: 20px;
-  P{
+  border-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  p{
     text-align: center;
+  }
+  img{
+    border-radius: 20px;
   }
 }
 

@@ -1,6 +1,6 @@
 @vite('resources/sass/donation.scss')
 
-<section class="donate-section">
+<section class="donate-section" id="donation">
    <center><h3>Donate Today and be a
    Guardian of the Green Belt.</h3>
    <p>Join us in our mission to rejuvenate and protect our shorelines 

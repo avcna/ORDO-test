@@ -66,7 +66,7 @@
 
 @endphp
 
-<section class="sponsor-section">
+<section class="sponsor-section" id="sponsor">
     <h3 class="title-sponsor">Sponsorship Packages</h3>
      <center><p class="desc-sponsor">Our sponsorship package offers branding, promotional opportunities, and visibility at our event, ideal for enhancing company presence and community engagement.</p></center>
 

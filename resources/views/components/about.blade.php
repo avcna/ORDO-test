@@ -1,6 +1,6 @@
 @vite('resources/sass/about.scss')
 
-<section class="about-section">
+<section class="about-section" id="about">
     <div class="text-wrapper">
         <div class="centered">
             <img src="{{asset('assets/about/Frame 78.svg')}}" alt="">
@@ -13,11 +13,11 @@
         
         <center>TRANSFORMATION</center>
       </div>
-      <div class="comparison">
+      <div class="comparisons">
         <img src="{{asset('assets/about/before.svg')}}" alt="">
         <p>Before mangroves were planted</p>
       </div>  
-      <div class="comparison">
+      <div class="comparisons">
         <img src="{{asset('assets/about/after.svg')}}" alt="">
         <p>After mangroves were planted</p>
       </div> 

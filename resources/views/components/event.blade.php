@@ -32,7 +32,7 @@
     ];
 @endphp
 
-<section class="event-section" id="#event">
+<section class="event-section" id="event">
     <h3 class="title-event">Event Summary</h3>
     <center><p class="sum-event">We give you a brief overview of the event to give you a glimpse of what we're doing 
     in the Green Haven Project, download the detailed PDF to see how you can get involved.</p></center>

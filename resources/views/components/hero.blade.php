@@ -15,13 +15,11 @@
     });
 @endphp
 
-<section>
+<section id="leaderboard">
     <div class="wrapper-top">
         <div class="content-1-wrapper">
             <div class="content-1">
-                <div class="label">
-                    Green Haven Project - Mangrove
-                </div>
+                <div class="label">Green Haven Project - Mangrove</div>
                 <h3>Green Horizons Await, Join Us in Planting 10,000 Mangroves!</h3>
                 <div class="mission">
                     <div class="wrapper">
@@ -48,41 +46,61 @@
         <div class="leaderboard-wrapper">
             <div class="leaderboard-content">
                 <h4>Leaderboard</h4>
-                <button  id="sortMostDonation">Most Donation</button>
+                <button id="sortMostDonation">Most Donation</button>
                 <button id="recent">Most Recent</button>
-                <div class="list-box" id="leaderboardList">
-                    @foreach($data as $person)
-                        <div class="list" data-trees>
-                            <div class="list-info">
-                                <div>
-                                    @switch($person['tier'])
-                                        @case('Guardian of the Grove')
-                                            <img src="{{ asset('assets/tier/guardian.svg') }}" alt="tier">
-                                            @break
 
-                                        @case('Mangrove Maven')
-                                            <img src="{{ asset('assets/tier/mang-mav.svg') }}" alt="tier">
-                                            @break
-
-                                        @case('Mangrove Master')
-                                            <img src="{{ asset('assets/tier/mang-mas.svg') }}" alt="tier">
-                                            @break
-
-                                        @default
-                                            <img src="{{ asset('assets/tier/default.svg') }}" alt="tier">
-                                    @endswitch
-                                </div>
-                                <div>
-                                    <p class="person-tier">{{ $person['tier'] }}</p>
-                                    <p class="person-name">{{ $person['name'] }}</p>
-                                </div>
-                            </div>
-                            <div class="tree-total">
-                                <img width="30px" src="{{ asset('assets/mangrove.svg') }}" alt="">
-                                <p><span class="number">{{ $person['trees'] }}</span> <span>pohon</span></p>
-                            </div>
+                <div class="flex-leader">
+                    <div class="list-box rank">
+                        <div class="list list-rank">
+                            <div class="shape">01</div>
                         </div>
-                    @endforeach
+                        <div class="list list-rank">
+                            <div class="shape">02</div>
+                        </div>
+                        <div class="list list-rank">
+                            <div class="shape">03</div>
+                        </div>
+                        <div class="list list-rank">
+                            <div class="shape lime">04</div>
+                        </div>
+                        <div class="list list-rank">
+                            <div class="shape more-lime">05</div>
+                        </div>
+                        <div class="list list-rank">
+                            <div class="shape more-lime">06</div>
+                        </div>
+                    </div>
+                    <div class="list-box" id="leaderboardList">
+                        @foreach($data as $person)
+                            <div class="list" data-trees>
+                                <div class="list-info">
+                                    <div>
+                                        @switch($person['tier'])
+                                            @case('Guardian of the Grove')
+                                                <img src="{{ asset('assets/tier/guardian.svg') }}" alt="tier">
+                                                @break
+                                            @case('Mangrove Maven')
+                                                <img src="{{ asset('assets/tier/mang-mav.svg') }}" alt="tier">
+                                                @break
+                                            @case('Mangrove Master')
+                                                <img src="{{ asset('assets/tier/mang-mas.svg') }}" alt="tier">
+                                                @break
+                                            @default
+                                                <img src="{{ asset('assets/tier/default.svg') }}" alt="tier">
+                                        @endswitch
+                                    </div>
+                                    <div>
+                                        <p class="person-tier">{{ $person['tier'] }}</p>
+                                        <p class="person-name">{{ $person['name'] }}</p>
+                                    </div>
+                                </div>
+                                <div class="tree-total">
+                                    <img width="30px" src="{{ asset('assets/mangrove.svg') }}" alt="">
+                                    <p><span class="number">{{ $person['trees'] }}</span> <span>pohon</span></p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,7 +116,6 @@
 </section>
 
 <script>
-    
     document.getElementById('sortMostDonation').addEventListener('click', function() {
         const listBox = document.getElementById('leaderboardList');
         const lists = Array.from(listBox.getElementsByClassName('list'));
