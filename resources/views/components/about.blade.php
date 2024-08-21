@@ -14,11 +14,11 @@
         <center>TRANSFORMATION</center>
       </div>
       <div class="comparisons">
-        <img src="{{asset('assets/about/before.svg')}}" alt="">
+         <center><img src="{{asset('assets/about/before.svg')}}" alt=""></center>
         <p>Before mangroves were planted</p>
       </div>  
       <div class="comparisons">
-        <img src="{{asset('assets/about/after.svg')}}" alt="">
+         <center><img src="{{asset('assets/about/after.svg')}}" alt=""></center>
         <p>After mangroves were planted</p>
       </div> 
     </div>
