@@ -1,3 +1,24 @@
+## Cara menjalankan aplikasi
+- clone repo ini dengan command `git clone`
+- buka folder dengan command `cd`
+- jalankan `npm i` pada terminal
+- jalankan `php artisan serve` pada terminal
+- tambah terminal baru dan jalankan `npm run dev`
+- copy dan paste alamat berikut ke web browser anda `http://localhost:8000/`
+
+  ## Fitur Utama
+  ✅ Navigation Bar <br/>
+  ✅ Section Leaderboard <br/>
+  ✅ Section About <br/>
+  ✅ Section Event <br/>
+  ✅ Section Sponsor <br/>
+  ✅ Footer <br/>
+  ✅ Event Carousel <br/>
+  ✅ Leaderboard Ranking <br/>
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
